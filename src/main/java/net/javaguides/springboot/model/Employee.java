@@ -9,8 +9,8 @@ import javax.persistence.*;
 @Data
 public class Employee {
     @Id
-    private Long id;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(name = "first_Name")
     private String firstName;
